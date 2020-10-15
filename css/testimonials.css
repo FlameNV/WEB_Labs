@@ -1,0 +1,119 @@
+.testimonials {
+    background-color: #F8F8F8;
+}
+
+.testimonials-container {
+    display: flex;
+}
+
+.testimonials__text-block {
+    padding-left: 80px;
+    padding-top: 80px;
+    width: 450px;
+}
+
+.testimonials__star-block {
+    padding-top: 145px;
+}
+
+.checked {
+    color: #FFBB0C;
+    height: 25px;
+    width: 24px;
+}
+
+.testimonials__quote {
+    font-family: 'Mulish';
+    font-size: 24px;
+    line-height: 36px;
+    padding: 30px 0 40px 0;
+    margin: 0;
+}
+
+.testimonials__author {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+
+.testimonials__specialty {
+    font-family: 'Inter';
+    font-size: 18px;
+    margin-top: 13px;
+}
+
+.testimonials__photo-block {
+    margin-left: 185px;
+    margin-top: 190px;
+    margin-bottom: 95px;
+    position: relative;
+}
+
+.testimonials__photo {
+    border-radius: 14px;
+}
+
+.testimonials__switcher {
+    height: 60px;
+    width: 132px;
+    background-color: #fff;
+    position: absolute;
+    top: 431px;
+    left: 252px;
+    right: 0;
+    border-radius: 16px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.testimonials__page-left {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #D7D7D7;
+}
+
+.testimonials__angle-left {
+    margin: 12px 0 0 15px;
+}
+
+.testimonials__page-right {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    margin-left: 22px;
+}
+
+.testimonials__angle-right {
+    margin: 12px 0 0 18px;
+}
+
+@media screen and (max-width: 425px) {
+    .testimonials__text-block {
+        width: 270px;
+    }
+    .testimonials__photo-block {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials-container {
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials__text-block {
+        padding: 0;
+    }
+    .testimonials__star-block {
+        padding-top: 50px;
+    }
+    .testimonials__photo-block {
+        margin: 50px 20px 20px 20px;
+    }
+}

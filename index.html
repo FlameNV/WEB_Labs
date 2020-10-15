@@ -1,135 +1,141 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>Mykyta Vyzhol 1st lab landing</title>
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
-	<!-- My Style -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mykyta Vyzhol 1st lab landing</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+    <!-- My Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-	<header class="header">
-		<div class="container header_container">
-			<nav class="header_nav">
-				<ul>
-					<li class="header_nav-item">
-						<a class="header_nav-link" href="">Home</a>
-					</li>
-					<li class="header_nav-item">
-						<a class="header_nav-link" href="">Destinations</a>
-					</li>
-					<li class="header_nav-item">
-						<a class="header_nav-link" href="">About</a>
-					</li>
-					<li class="header_nav-item">
-						<a class="header_nav-link" href="">Partner</a>
-					</li>
-				</ul>
-			</nav>
-			<img src="images/logo.svg" alt="logo" class="logo">
-			<button class="header_login">Login</button>
-			<button class="header_register">Register</button>
-			<div class="container content_container">
-				<div class="header_content">
-					<h1 class="header_heading">Guides by Thousand Sunny</h1>
-					<p class="header_text">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
-					<button class="header_download">Download</button>
-				</div>
-			</div>
-			<img src="images/background.svg" class="header_background">
-		</div>
-	</header>
-	<section class="testimonials">
-		<div class="container testimonials_container">
-			<h1 class="testimonials_heading">Testimonials</h1>
-			<div class="star_block">
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
+    <section class="hero">
+        <div class="container">
+            <header class="header">
+                <div class="header__menu" onclick="toggleMenu()">
+                    <img src="images/menu-icon.svg">
+                </div>
+                <nav id="nav-links" class="header__nav">
+                    <ul>
+                        <li>
+                            <a class="header__nav-link" href="">Home</a>
+                        </li>
+                        <li>
+                            <a class="header__nav-link" href="">Destinations</a>
+                        </li>
+                        <li>
+                            <a class="header__nav-link" href="">About</a>
+                        </li>
+                        <li>
+                            <a class="header__nav-link" href="">Partner</a>
+                        </li>
+                    </ul>
+                </nav>
+                <img src="images/logo.svg" alt="logo" class="logo">
+                <div class="header__button">
+                    <button class="header__login">Login</button>
+                    <button class="header__register">Register</button>
+                </div>
+            </header>
+        </div>
+        <div class="container hero-container">
+            <div class="hero__inner">
+                <h1 class="heading">Guides by Thousand Sunny</h1>
+                <p class="hero__text">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
+                <button class="hero__download">Download</button>
+            </div>
+            <img src="images/background.svg" class="hero__background">
+        </div>
+    </section>
 
-			</div>
-			<p class="testimonials_quote">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
-			<p class="testimonials_author">Edward Newgate</p>
-			<p class="testimonials_specialty">Founder Circle</p>
-			<div class="photo_block">
-					<img src="images/photo.png" class="testimonials_photo">
-					<div class="switcher">
-						<div class="page_left">
-							<div class="arrow-left">
-								<i class="arrow left"></i>
-							</div>
-						</div>
-						<div class="page_right">
-							<div class="arrow-right">
-								<i class="arrow right"></i>
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-	</section>
-	<section class="trending">
-		<div class="container trending_container">
-			<div class="trending_nav_block">
-			<h1 class="trending_main_heading">Trending stories</h1>
-			<a class="view_all" href="">View all > </a>
-			</div>
-			<div class="blogs">
-			<div class="blog_1">
-			<img src="images/image 12.png" class="trending_pic">
-			<p class="trending_heading">The many benefits of taking a healing holiday</p>
-			<p class="trending_text">‘Helaing holidays’ are on the rise 
-			tohelp maximise your health and happines...</p>
-			<a class="read_more" href="">Read more</a>
-			</div>
-			<div class="blog_2">
-			<img src="images/image 13.png" class="trending_pic">
-			<p class="trending_heading">The best Kyoto restaurant to try Japanese food</p>
-			<p class="trending_text">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
-			to visit...</p>
-			<a class="read_more" href="">Read more</a>
-			</div>
-			<div class="blog_3">
-			<img src="images/image 14.png" class="trending_pic">
-			<p class="trending_heading">Skip Chichen Itza and head to this remote Yucatan</p>
-			<p class="trending_text">It’s remote and challenging to get,
-				but braving the jungle and exploring
-			these ruins without the...</p>
-			<a class="read_more" href="">Read more</a>
-			</div>
-			<div class="blog_4">
-			<img src="images/image 15.png" class="trending_pic">
-			<p class="trending_heading">Surf’s up at these beginner spots around the world</p>
-			<p class="trending_text">If learning to surf has in on your to-
-				do list for a while, the good news
-			is: it’s never too late...</p>
-			<a class="read_more" href="">Read more</a>
-			</div>
-			</div>
-		</div>
-	</section>
-	<footer class="footer">
-		<div class="container footer_container">
-			<div class="upper_footer">
-			<img src="images/logo.svg" class="footer_logo">
-			<p class="rights">©2020 Thousand Sunny. All rights reserved</p>
-			</div>
-			<div class="social">
-				<img src="images/twitter.svg" class="social_logo">
-				<img src="images/fb.svg" class="social_logo">
-				<img src="images/instagram.svg" class="social_logo">
-				<img src="images/ln.svg" class="social_logo">
-				<img src="images/youtube.svg" class="social_logo">
-			</div>
-		</div>
-	</footer>
-
+    <section class="testimonials">
+        <div class="container testimonials-container">
+            <div class="testimonials__text-block">
+                <h1 class="heading">Testimonials</h1>
+                <div class="testimonials__star-block">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="testimonials__quote">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+                <p class="testimonials__author">Edward Newgate</p>
+                <p class="testimonials__specialty">Founder Circle</p>
+            </div>
+            <div class="testimonials__photo-block">
+                <img src="images/photo.png" class="testimonials__photo">
+                <div class="testimonials__switcher">
+                    <div class="testimonials__page-left">
+                        <div class="testimonials__angle-left">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="testimonials__page-right">
+                        <div class="testimonials__angle-right">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trending">
+        <div class="container trending-container">
+            <div class="trending__nav-block">
+                <h1 class="heading">Trending stories</h1>
+                <a class="trending__view-all" href="">View all > </a>
+            </div>
+            <div class="trending__blogs">
+                <div class="trending__solo-blog">
+                    <img src="images/image 12.png" class="trending__pic">
+                    <p class="trending__heading">The many benefits of taking a healing holiday</p>
+                    <p class="trending__text">‘Helaing holidays’ are on the rise tohelp maximise your health and happines...</p>
+                    <a class="trending__read-more" href="">Read more</a>
+                </div>
+                <div class="trending__solo-blog">
+                    <img src="images/image 13.png" class="trending__pic">
+                    <p class="trending__heading">The best Kyoto restaurant to try Japanese food</p>
+                    <p class="trending__text">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants to visit...</p>
+                    <a class="trending__read-more" href="">Read more</a>
+                </div>
+                <div class="trending__solo-blog">
+                    <img src="images/image 14.png" class="trending__pic">
+                    <p class="trending__heading">Skip Chichen Itza and head to this remote Yucatan</p>
+                    <p class="trending__text">It’s remote and challenging to get, but braving the jungle and exploring these ruins without the...</p>
+                    <a class="trending__read-more" href="">Read more</a>
+                </div>
+                <div class="trending__solo-blog">
+                    <img src="images/image 15.png" class="trending__pic">
+                    <p class="trending__heading">Surf’s up at these beginner spots around the world</p>
+                    <p class="trending__text">If learning to surf has in on your to- do list for a while, the good news is: it’s never too late...</p>
+                    <a class="trending__read-more" href="">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer__upper">
+                <img src="images/logo.svg" class="footer__logo">
+                <p class="footer__rights">©2020 Thousand Sunny. All rights reserved</p>
+            </div>
+            <div class="footer__social">
+                <img src="images/twitter.svg" class="footer__social-logo">
+                <img src="images/fb.svg" class="footer__social-logo">
+                <img src="images/instagram.svg" class="footer__social-logo">
+                <img src="images/ln.svg" class="footer__social-logo">
+                <img src="images/youtube.svg" class="footer__social-logo">
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

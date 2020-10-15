@@ -1,0 +1,121 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 27px;
+}
+
+.header__menu {
+    display: none;
+    width: 32px;
+    cursor: pointer;
+}
+
+.header__menu>img {
+    max-width: 100%;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav ul {
+    display: flex;
+    padding-left: 0;
+}
+
+.header__nav-link {
+    font-family: 'Inter';
+    color: #B8BECD;
+    line-height: 19px;
+    padding-right: 35px;
+}
+
+.header__nav-link:hover {
+    color: #000;
+    font-weight: 500;
+}
+
+.logo {
+    width: 41px;
+    height: 41px;
+}
+
+.header__login {
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #FB8F1D;
+    background: #fff;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    color: #FB8F1D;
+    margin-right: 18px;
+}
+
+.header__register {
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #FB8F1D;
+    background: #FB8F1D;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+    .logo {
+        display: none;
+    }
+    .header__register {
+        width: 90px;
+        height: 40px;
+    }
+    .header__login {
+        width: 90px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        justify-content: space-between;
+        background-color: #F8F8F8;
+    }
+    .header__menu {
+        display: block;
+    }
+    .header__nav {
+        position: fixed;
+        clip-path: circle(0 at left);
+        transition: clip-path 0.6s ease-in;
+        top: 50px;
+        margin-top: 0;
+        flex: 1;
+        margin-right: 0;
+    }
+    .header__nav.open {
+        clip-path: circle(1000px at top);
+    }
+    .header__nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+    .header__nav a {
+        display: block;
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
